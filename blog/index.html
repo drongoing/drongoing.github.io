@@ -1,0 +1,29 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="blog-container">
+
+  <div class="blog-header">
+    <h1 class="blog-page-title">Blog</h1>
+    <p class="blog-page-subtitle">Occasional writing on research, code, and ideas.</p>
+  </div>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li class="post-item">
+      <div class="post-item-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+      <div class="post-item-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </div>
+      {% if post.excerpt %}
+      <p class="post-item-excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 40 }}
+      </p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+</div>

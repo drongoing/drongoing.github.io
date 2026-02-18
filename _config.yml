@@ -1,0 +1,15 @@
+title:       Vibhu Ganesan
+description: Personal website of Vibhu Ganesan.
+baseurl:     ""
+url:         "https://drongoing.github.io"
+author:      Vibhu Ganesan
+
+# Build
+markdown:  kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
