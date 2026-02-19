@@ -157,6 +157,72 @@ nav {
   color: var(--accent);
 }
 
+/* ── Homepage blog preview ── */
+.home-post-list {
+  list-style: none;
+  margin-bottom: 1.75rem;
+}
+
+.home-post-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-post-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.home-post-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  padding-top: 0.15rem;
+  grid-row: 1;
+}
+
+.home-post-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.home-post-title a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+.home-post-title a:hover {
+  color: var(--accent);
+}
+
+.home-post-excerpt {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 0.3rem;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.all-posts-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.all-posts-link:hover {
+  opacity: 0.72;
+}
+
 /* ── Projects ── */
 .projects-grid {
   display: grid;

@@ -66,6 +66,27 @@ title: Vibhu Ganesan
   </div>
 </section>
 
+<!-- ═══════════════════════════════ BLOG ═══════════════════════════════ -->
+<section class="section" id="blog">
+  <span class="section-label">Blog</span>
+
+  <ul class="home-post-list">
+    {% for post in site.posts limit: 5 %}
+    <li class="home-post-item">
+      <span class="home-post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="home-post-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </span>
+      {% if post.excerpt %}
+      <p class="home-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <a href="{{ '/blog/' | relative_url }}" class="all-posts-link">All posts &rarr;</a>
+</section>
+
 <!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
 <section class="section" id="projects">
   <span class="section-label">Projects</span>
