@@ -33,6 +33,6 @@ Temporal analysis revealed that roughly 40% of conversations follow non-linear e
 
 These findings have direct implications for organizations deploying LLMs in sensitive domains. Traditional content filtering and end-of-conversation review are not enough. Real-time, turn-level monitoring is necessary — with automatic intervention at escalation thresholds and human oversight for consequential decisions.
 
-The full framework is open source at [github.com/drongoing/manipulation-tracker](https://github.com/drongoing/manipulation-tracker). The code includes scenario generation, conversation rollout, and the complete scoring pipeline — built to be extended.
+The full framework is open source at [github.com/vibhuganesan/manipulation-tracker](https://github.com/vibhuganesan/manipulation-tracker). The code includes scenario generation, conversation rollout, and the complete scoring pipeline — built to be extended.
 
 This work was conducted with Apart Research. The methodology focuses on two manipulation categories; emotional manipulation, authority exploitation, and social proof remain areas for future work.
