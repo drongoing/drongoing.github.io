@@ -102,17 +102,10 @@ nav {
   width: 190px;
   height: 190px;
   border-radius: 6px;
-  background: var(--accent-light);
-  border: 1px solid #e0d4a8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--accent-dark);
-  letter-spacing: -0.02em;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--border);
   flex-shrink: 0;
-  user-select: none;
 }
 
 .about-name {
